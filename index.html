@@ -96,6 +96,40 @@
       font-size: 1.1rem;
     }
 
+    .testimonials {
+      margin-top: 2rem;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .quote-card {
+      background: #fffefb;
+      border: 1px solid #d9dfcc;
+      border-radius: 14px;
+      padding: 1.1rem;
+      box-shadow: 0 8px 20px rgba(73, 84, 58, 0.06);
+    }
+
+    .quote-card p {
+      margin: 0;
+    }
+
+    .quote-text {
+      font-size: 1rem;
+    }
+
+    .quote-meta {
+      margin-top: 0.75rem;
+      color: #5b6548;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
     section {
       margin: 1.6rem 0;
       animation: fadeIn 1s ease-out both;
@@ -139,6 +173,10 @@
       .grid {
         grid-template-columns: 1fr;
       }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -175,6 +213,28 @@
     <section>
       <h2>About Aishling</h2>
       <p>Aishling Murray provides calm, compassionate postpartum night doula care across San Francisco. Her approach is warm, non-judgmental, and centered on helping your whole family rest and adjust with confidence.</p>
+    </section>
+
+    <section class="testimonials">
+      <h2>Kind Words From Families</h2>
+      <div class="testimonials-grid">
+        <article class="quote-card">
+          <p class="quote-text">"One of the best decisions we made was selecting night doula Aishling... professional, extremely knowledgeable, and personable."</p>
+          <p class="quote-meta">Ariella H. • Yelp • Nov 2025</p>
+        </article>
+        <article class="quote-card">
+          <p class="quote-text">"Aishling answered our many questions... and allowed us to sleep soundly. Aishling was awesome."</p>
+          <p class="quote-meta">Hugh C. • Yelp • Jun 2024</p>
+        </article>
+        <article class="quote-card">
+          <p class="quote-text">"We were super comfortable with her being with our baby through the night... this experience was worth every dollar."</p>
+          <p class="quote-meta">Michele C. • Google Review • 2025</p>
+        </article>
+        <article class="quote-card">
+          <p class="quote-text">"With Aishling, you get years of doula expertise, judgment-free postpartum care, and above-and-beyond help when it matters most."</p>
+          <p class="quote-meta">Samantha W. • Yelp • Oct 2023</p>
+        </article>
+      </div>
     </section>
 
     <section class="contact">
